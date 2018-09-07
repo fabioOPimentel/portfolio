@@ -77,7 +77,7 @@ $bg-cyan: rgb(133, 193, 234);
     box-sizing: content-box;
 }
 
-body, html, .tab-content{
+body, html{
     height: 100%;
     padding: 0;
     margin: 0;
@@ -101,6 +101,12 @@ body, html, .tab-content{
 }
 
 @media(min-width: 320px){
+    .tab-content{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
      /*Apresentação*/
      .apresentacao{
         @include scrolling;
@@ -140,9 +146,8 @@ body, html, .tab-content{
         }
     }
     .skill-modulo{
-        height: 100%;
         background-color: $bg-grey;
-        overflow-y: scroll;
+        overflow: hidden;
     }
     .skill{
         p{
@@ -184,6 +189,11 @@ body, html, .tab-content{
     .trabalhos-container{
         @include scrolling;
         margin-top: 51px;
+
+        li{
+            margin-top: 40px;
+        }
+
         figcaption{
             a{
                 @include fontsize(14);
@@ -195,11 +205,23 @@ body, html, .tab-content{
 @media(min-width: 567px){
 }
 @media(min-width: 767px){
+    
 }
 @media(min-width: 992px){
+    .tab-content{
+        overflow: hidden;
+    }
     .apresentacao{
         h3{
             @include fontsize(40);
+        }
+    }
+    .trabalhos-container{
+        @include scrolling;
+        margin-top: 51px;
+        
+        li{
+            margin-top: 0;
         }
     }
 }
@@ -209,7 +231,7 @@ body, html, .tab-content{
         margin-top: 51px;
         video{
             display: block;
-            width: 100%;
+            width: 105%;
             height: auto;
         }
         div{
