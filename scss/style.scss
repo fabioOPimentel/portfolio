@@ -175,7 +175,7 @@ body, html, .tab-content{
     .job{
         float: none !important;
         margin: 3% auto;
-        @include fontsize(12);
+        @include fontsize(14);
         line-height: 1.375;
         text-align: left;
     }
