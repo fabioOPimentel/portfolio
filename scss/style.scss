@@ -1,0 +1,223 @@
+/**
+* Paletas de cores
+*/
+$bg-white: #FFF;
+$bg-black: #000;
+$bg-grey: #F1F1F1;
+$bg-cyan: rgb(133, 193, 234);
+
+
+/**
+* Fontes
+*/
+
+/**
+* Importações
+*/
+
+/**
+* Functions
+*/
+@function get-vw($target) {   
+    $vw-context: (320 * 0.01) * 1px;   
+    @return ($target / $vw-context) * 1vw; 
+}
+@function get-vw567($target) {   
+    $vw-context: (567 * 0.01) * 1px;   
+    @return ($target / $vw-context) * 1vw; 
+}
+@function get-vw768($target) {   
+    $vw-context: (768 * 0.01) * 1px;   
+    @return ($target / $vw-context) * 1vw; 
+}
+@function get-vw992($target) {   
+    $vw-context: (992 * 0.01) * 1px;   
+    @return ($target / $vw-context) * 1vw; 
+}
+@function get-vw1920($target) {   
+    $vw-context: (1920 * 0.01) * 1px;   
+    @return ($target / $vw-context) * 1vw; 
+}
+/**
+*   Mixins
+*/
+@mixin fontsize($size, $base: 10){
+    font-size: $size + px;
+    font-size: ($size/$base) * 1rem;
+}
+
+@mixin transition($propiedade, $tempo, $curva, $delay){
+    -webkit-transition: $propiedade $tempo $curva $delay;
+    -moz-transition: $propiedade $tempo $curva $delay;
+    -o-transition: $propiedade $tempo $curva $delay;
+    transition: $propiedade $tempo $curva $delay;
+}
+
+@mixin transform($propiedade){
+    -ms-transform: $propiedade;
+    -webkit-transform: $propiedade;
+    -moz-transform: $propiedade;
+    -o-transform: $propiedade;
+    transform: $propiedade;
+}
+
+@mixin animationDelay($time) {
+    -webkit-animation-delay: $time;
+    -moz-animation-delay: $time;
+    -o-animation-delay: $time;
+    animation-delay: $time;
+}
+
+@mixin scrolling {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+    box-sizing: content-box;
+}
+
+body, html, .tab-content{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    overflow: hidden;
+}
+
+.hide-title{
+    display: none;
+}
+
+/*Menu*/
+.navegacao{
+    @include fontsize(19);
+    color: #9D9D9D;
+    background-color: transparent !important;
+    &:hover,&:focus,&:active{
+        background-color: transparent !important;
+        color: #fff;
+    }
+}
+
+@media(min-width: 320px){
+     /*Apresentação*/
+     .apresentacao{
+        @include scrolling;
+        background-image: url('../img/dev.jpg');
+        background-repeat: no-repeat;
+        background-position: left 0;
+        background-size: cover;
+        video{
+            display: none;
+        }
+        div{
+            position: absolute;
+            width: 100%;
+            top: 20%;
+            text-align: center;
+            padding: 0 15px
+        }
+        h3{
+            @include fontsize(30);
+            font-weight: bold;
+            color: $bg-white;
+            text-transform: uppercase;
+        }
+        span{
+            color: $bg-white;
+            @include fontsize(40);
+            margin: 0 0 60px;
+        }
+    }
+
+    /*Habilidades*/
+    .skill-container{
+        @include scrolling;
+        margin-top: 51px;
+        .clearfix{
+            height: 100%;
+        }
+    }
+    .skill-modulo{
+        height: 100%;
+        background-color: $bg-grey;
+        overflow-y: scroll;
+    }
+    .skill{
+        p{
+            @include fontsize(16);
+        }
+        &:nth-of-type(2){
+            @include animationDelay(200ms);
+        }
+        &:nth-of-type(3){
+            @include animationDelay(500ms);
+        }
+    }
+    .skill, .exp-modulo{
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    /*Experiencias Profissionais*/
+    .exp-container{
+        @include scrolling;
+        margin-top: 51px;
+    }
+
+    blockquote{
+        float: none !important;
+        margin: 3% auto;
+        font-style: italic;
+        color: $bg-cyan;
+    }
+    .job{
+        float: none !important;
+        margin: 3% auto;
+        @include fontsize(12);
+        line-height: 1.375;
+        text-align: left;
+    }
+
+    /*Trabalhos Realizados*/
+    .trabalhos-container{
+        @include scrolling;
+        figcaption{
+            a{
+                @include fontsize(14);
+                color: $bg-black;
+            }
+        }
+    }
+}
+@media(min-width: 567px){
+}
+@media(min-width: 767px){
+}
+@media(min-width: 992px){
+    .apresentacao{
+        h3{
+            @include fontsize(40);
+        }
+    }
+}
+@media(min-width: 1280px){
+   /*Apresentação*/
+    .apresentacao{
+        margin-top: 51px;
+        video{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        div{
+            width: 50%;
+            left: 50%;
+            margin-left: -25%;
+        }
+        h3{
+            @include fontsize(57);
+        }
+    }
+}
