@@ -28,3 +28,5 @@ HTML5, CSS3, Sass.
 > * [LKX Capital](http://lkxcapital.com.br/)
 > * [Núcleo de Decoração na Bahia](http://ndbahia.com.br/)
 > * [Planeta Olodum](http://planetaolodum.com/)
+> * [Senac Cursos](http://cursos.ba.senac.br/)
+> * [Via Projetos](http://viaprojetos.com.br/)

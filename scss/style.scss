@@ -89,6 +89,11 @@ body, html{
     display: none;
 }
 
+.clear{
+    display: table !important;
+    clear: both !important;
+}
+
 /*Menu*/
 .navegacao{
     @include fontsize(19);
@@ -101,28 +106,48 @@ body, html{
 }
 
 @media(min-width: 320px){
+    #app{
+        width: 100%;
+        height: 100%;
+    }
     .tab-content{
         width: 100%;
         height: 100%;
         overflow-x: hidden;
         overflow-y: scroll;
     }
+    .navbar-brand{
+        svg{
+            width: 40px;
+            fill: $bg-white;
+        }
+    }
      /*Apresentação*/
      .apresentacao{
         @include scrolling;
-        background-image: url('../img/dev.jpg');
+        background-image: url('../img/bg-dev.jpg');
+        moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+         -o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+         -webkit-filter: grayscale(100%);
+         filter: gray;
+         filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
         background-repeat: no-repeat;
         background-position: left 0;
         background-size: cover;
-        video{
-            display: none;
-        }
         div{
             position: absolute;
-            width: 100%;
+            width: 80%;
+            height: 50%;
+            background-color: $bg-black;
             top: 20%;
+            left: 50%;
+            margin-left: -40%;
             text-align: center;
-            padding: 0 15px
+            padding: 20px 15px;
+            border-top: 40px solid $bg-grey;
+            border-right: 10px solid $bg-grey;
+            border-bottom: 10px solid $bg-grey;
+            border-left: 10px solid $bg-grey;
         }
         h3{
             @include fontsize(30);
@@ -146,25 +171,103 @@ body, html{
         }
     }
     .skill-modulo{
-        background-color: $bg-grey;
         overflow: hidden;
-    }
-    .skill{
-        p{
-            @include fontsize(16);
-        }
-        &:nth-of-type(2){
-            @include animationDelay(200ms);
-        }
-        &:nth-of-type(3){
-            @include animationDelay(500ms);
-        }
-    }
-    .skill, .exp-modulo{
-        text-align: center;
-        margin-top: 10%;
+        header{
+            figure{
+                text-align: center;
+                img{
+                    margin: 40px 0 0;
+                }
+            }
+            h3{
+                @include fontsize(30);
+                text-align: center;
+            }
+        }   
     }
 
+    .conhecimentos{
+        margin: 60px 0 0;
+        li{
+            height: 80px;
+            p{
+                @include fontsize(24);
+            }
+            &.php{
+                .progresso{
+                    width: 90%;
+                }
+            }
+            &.wordpress{
+                animation-delay: 200ms;
+                .progresso{
+                    width: 80%;
+                }
+            }
+            &.codeigniter{
+                animation-delay: 400ms;
+                .progresso{
+                    width: 75%;
+                }
+            }
+            &.laravel{
+                .progresso{
+                    width: 50%;
+                }
+            }
+            &.javascript{
+                animation-delay: 200ms;
+                .progresso{
+                    width: 65%;
+                }
+            }
+            &.vue{
+                animation-delay: 400ms;
+                .progresso{
+                    width: 60%;
+                }
+            }
+            &.jquery{
+                .progresso{
+                    width: 70%;
+                }
+            }
+            &.html{
+                animation-delay: 200ms;
+                .progresso{
+                    width: 85%;
+                }
+            }
+            &.sass{
+                animation-delay: 400ms;
+                .progresso{
+                    width: 80%;
+                }
+            }
+            &.bootstrap{
+                .progresso{
+                    width: 80%;
+                }
+            }
+        }
+    }
+    .barra-de-progresso{
+        position: relative;
+        width: 100%;
+        height: 20px;
+        background-color: $bg-grey;
+    }
+    .progresso{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        background-color: $bg-black;
+    }
+    .header-center{
+        text-align: center;
+        margin-top: 60px;
+    }
     /*Experiencias Profissionais*/
     .exp-container{
         @include scrolling;
@@ -205,7 +308,15 @@ body, html{
 @media(min-width: 567px){
 }
 @media(min-width: 767px){
-    
+    .navbar-collapse{
+        float: right;
+    }
+    .menu-portfolio{
+        display: flex;
+        li{
+            width: auto;
+        }
+    }
 }
 @media(min-width: 992px){
     .tab-content{
@@ -219,21 +330,12 @@ body, html{
     .trabalhos-container{
         @include scrolling;
         margin-top: 51px;
-        
-        li{
-            margin-top: 0;
-        }
     }
 }
 @media(min-width: 1280px){
    /*Apresentação*/
     .apresentacao{
         margin-top: 51px;
-        video{
-            display: block;
-            width: 105%;
-            height: auto;
-        }
         div{
             width: 50%;
             left: 50%;
