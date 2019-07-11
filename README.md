@@ -30,3 +30,5 @@ HTML5, CSS3, Sass.
 > * [Planeta Olodum](http://planetaolodum.com/)
 > * [Senac Cursos](http://cursos.ba.senac.br/)
 > * [Via Projetos](http://viaprojetos.com.br/)
+> * [Tempo Propaganda](http://tempopropaganda.com.br/)
+> * [Juliana Patury Arquitetura](http://julianapaturyarquitetura.com.br/)
