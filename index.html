@@ -6,7 +6,7 @@
     <title>Fábio O.Pimentel</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -14,218 +14,266 @@
 
 <body>
     <h1 class="hide-title">Fábio Oliveira Pimentel: Portfólio e Apresentação profissional</h1>
-    <section id="app">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div id="app">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <h2 class="hide-title">Menu de navegação</h2>
             <div class="container">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <a href="./" class="navbar-brand">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.96 21.68">
+                        <title>fp</title>
+                        <path d="M3,9.29H17.77v4.88H8.85v5h7.88v4.88H8.85V31H3Z" transform="translate(-3.04 -9.29)"/>
+                        <path d="M26.46,31h-5.8V9.29h8.23C34.72,9.29,38,13,38,17.81s-3.28,8.48-9.12,8.48H26.46Zm2.14-9.6c2.61,0,3.57-1.47,3.57-3.57s-1-3.6-3.57-3.6H26.46v7.18Z" transform="translate(-3.04 -9.29)"/>
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#presentation"  aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-header">
-                    <a href="#pills1" data-toggle="tab" class="navbar-brand">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.96 21.68">
-                            <title>fp</title>
-                            <path d="M3,9.29H17.77v4.88H8.85v5h7.88v4.88H8.85V31H3Z" transform="translate(-3.04 -9.29)"/>
-                            <path d="M26.46,31h-5.8V9.29h8.23C34.72,9.29,38,13,38,17.81s-3.28,8.48-9.12,8.48H26.46Zm2.14-9.6c2.61,0,3.57-1.47,3.57-3.57s-1-3.6-3.57-3.6H26.46v7.18Z" transform="translate(-3.04 -9.29)"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav nav-pills nav-justified menu-portfolio">
-                        <li role="presentation"><a class="navegacao" href="#pills1" data-toggle="tab">Home</a></li>
-                        <li role="presentation"><a class="navegacao" href="#pills2" data-toggle="tab">Habilidades</a></li>
-                        <li role="presentation"><a class="navegacao" href="#pills3" data-toggle="tab">Experiência Profissional</a></li>
-                        <li role="presentation"><a class="navegacao" href="#pills4" data-toggle="tab">Trabalhos Feitos</a></li>
+                <div id="presentation" class="collapse navbar-collapse">
+                    <ul class="col-12 navbar-nav mr-auto menu-portfolio d-flex align-itens-center justify-content-center">
+                        <li class="nav-item mx-5" ><a class="navegacao" href="./#/habilidades">Habilidades</a></li>
+                        <li class="nav-item mx-5" ><a class="navegacao" href="./#/experiencia-profissional">Experiência Profissional</a></li>
+                        <li class="nav-item mx-5" ><a class="navegacao" href="./#/trabalhos-feitos">Trabalhos Feitos</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!--Fim do menu-->
-        <section class="tab-content">
+
+        <div class="tab-content">
             <h2 class="hide-title">Área de conteudo</h2>
-            <section class="apresentacao tab-pane fade active in" id="pills1">
-                <h2 class="hide-title">Introdução</h2>
-                <div class="animated fadeInUp">
-                    <span class="fa fa-arrow-up animated slideInUp slower infinite"></span>
-                    <h3>
-                        Fábio Pimentel
-                        <small>Desenvolvedor Web</small>
-                        <span class="animated flash fast infinite">_</span>
-                    </h3>
-                </div>
-            </section>
-            <section class="skill-container tab-pane fade in" id="pills2">
-                <h2 class="hide-title">Habilidades Profissionais</h2>
-                <section class="clearfix" id="skill">
-                    <section class="skill-modulo col-lg-12">
-                        <header class="animated slideInDown">
-                            <figure>
-                            <img src="img/FlatSkill.png" alt="Habilidades Profissionais">
-                            </figure>
-                            <h3>Meus Conhecimentos</h3>
-                        </header>
-                        <ul class="conhecimentos list-unstyled clearfix">
-                            <li class="animated fadeInLeft col-md-4 col-sm-6 col-xs-12 php">
-                                <p>PHP</p>
-                                <div class="barra-de-progresso">
-                                    <div class="progresso"></div>
-                                </div>
-                            </li>
-                            <li class="animated fadeInLeft col-md-4 col-sm-6 col-xs-12 wordpress">
-                                <p>Wordpress</p>
-                                <div class="barra-de-progresso">
-                                    <div class="progresso"></div>
-                                </div>
-                            </li>
-                            <li class="animated fadeInLeft col-md-4 col-sm-6 col-xs-12 codeigniter">
-                                <p>CodeIgniter</p>
-                                <div class="barra-de-progresso">
-                                    <div class="progresso"></div>
-                                </div>
-                            </li>
-                            <li class="animated fadeInLeft col-md-4 col-sm-6 col-xs-12 laravel">
-                                <p>Larevel</p>
-                                <div class="barra-de-progresso">
-                                    <div class="progresso"></div>
-                                </div>
-                            </li>
-                            <li class="animated fadeInLeft col-md-4 col-sm-6 col-xs-12 javascript">
-                                <p>JavaScript</p>
-                                <div class="barra-de-progresso">
-                                    <div class="progresso"></div>
-                                </div>
-                            </li>
-                            <li class="animated fadeInLeft col-md-4 col-sm-6 col-xs-12 vue">
-                                <p>VueJs</p>
-                                <div class="barra-de-progresso">
-                                    <div class="progresso"></div>
-                                </div>
-                            </li>
-                            <li class="animated fadeInLeft col-md-4 col-sm-6 col-xs-12 jquery">
-                                <p>Jquery</p>
-                                <div class="barra-de-progresso">
-                                    <div class="progresso"></div>
-                                </div>
-                            </li>
-                            <li class="animated fadeInLeft col-md-4 col-sm-6 col-xs-12 html">
-                                <p>HTML/CSS</p>
-                                <div class="barra-de-progresso">
-                                    <div class="progresso"></div>
-                                </div>
-                            </li>
-                            <li class="animated fadeInLeft col-md-4 col-sm-6 col-xs-12 sass">
-                                <p>Sass</p>
-                                <div class="barra-de-progresso">
-                                    <div class="progresso"></div>
-                                </div>
-                            </li>
-                            <li class="animated fadeInLeft col-md-4 col-sm-6 col-xs-12 bootstrap">
-                                <p>Bootstrap</p>
-                                <div class="barra-de-progresso">
-                                    <div class="progresso"></div>
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
-                </section>
-            </section>
-            <section class="exp-container tab-pane fade in" id="pills3">
-                <h2 class="hide-title">Experiências Profissionais</h2>
-                <div id="exp">
-                    <div class="header-center col-lg-12">
-                        <figure class="animated fadeInDown">
-                            <img src="img/fabio.jpg" class="img-circle">
-                            <figcaption>
-                                    <small><span class="glyphicon glyphicon-map-marker">&nbsp;</span>Salvador, Bahia</small>
-                            </figcaption>
+            <router-view></router-view>
+        </div>
+    </div>
+
+    <!-- Apresentação -->
+    <template id="apresentacao">
+        <section class="apresentacao fade show">
+            <h2 class="hide-title">Introdução</h2>
+            <div class="animated fadeInUp">
+                <span class="fa fa-arrow-up animated slideInUp slower infinite"></span>
+                <h3>
+                    Fábio Pimentel
+                    <small>Desenvolvedor Web</small>
+                    <span class="animated flash fast infinite">_</span>
+                </h3>
+            </div>
+        </section>
+    </template>
+
+    <!-- Habilidades -->
+    <template id="skills">
+        <section class="skill-container fade show" >
+            <h2 class="hide-title">Habilidades Profissionais</h2>
+            <section class="clearfix" id="skill">
+                <section class="skill-modulo col-lg-12">
+                    <header class="animated slideInDown">
+                        <figure>
+                        <img src="img/FlatSkill.png" alt="Habilidades Profissionais">
                         </figure>
-                        <blockquote class="animated fadeIn col-md-4 col-sm-12 col-xs-12">
-                            “Desenvolvedor Web a 2 anos com conhecimento em ferramentas voltadas para computação gráfica, sempre disposto a obter
-                            novos conhecimentos e disposição para encarar novos desafios”
-                        </blockquote>
-                        <h3 class="animated fadeInUp format-h3">Ultimas Experiências Profissionais</h3>
-                        <ul class="animated fadeInUp list-unstyled">
-                            <li class="col-md-4 col-sm-12 col-xs-12">
-                                <p class="job">
-                                    Suporte Técnico (TI) – (Março de 2012 até Junho de 2014)
-                                    <strong>SAGA – Escola de arte, games e animação.</strong>
-                                    Gerenciamento de maquinas, rede e softwares.
-                                    Logística de peças de equipamentos para reposição.
-                                </p>
-                            </li>
-                            <li class="col-md-4 col-sm-12 col-xs-12">
-                                <p class="job">
-                                    Desenvolvedor Full-Stack – (Março de 2016 até Fevereiro de 2018)
-                                    <strong>Ouzar - Comunicação e marketing</strong>
-                                    Desenvolvimento de sites e aplicações web.
-                                </p>
-                            </li>
-                            <li class="col-md-4 col-sm-12 col-xs-12">
-                                <p class="job">
-                                    Desenvolvedor Front-end – (Março de 2018 até o momento)
-                                    <strong>Tao Interativa</strong>
-                                    Desenvolvimento de sites e aplicações web.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="trabalhos-container tab-pane fade in" id="pills4">
-                <h2 class="hide-title">Trabalhos Realizados</h2>
-                <div class="container animated fadeIn">
-                    <ul class="list-unstyled row header-center">
-                        <li class="col-md-4 col-sm-6 col-xs-12">
-                            <figure>
-                                <img class="center-block img-responsive" src="img/mockup_lkx.png">
-                                <figcaption>
-                                    <a href="http://lkxcapital.com.br/">LKX Capital</a>
-                                </figcaption>
-                            </figure>
+                        <h3>Meus Conhecimentos</h3>
+                    </header>
+                    <ul class="conhecimentos list-unstyled clearfix d-flex flex-wrap">
+                        <li class="animated fadeInLeft col-md-4 col-sm-6 col-12 php">
+                            <p>PHP</p>
+                            <div class="barra-de-progresso">
+                                <div class="progresso"></div>
+                            </div>
                         </li>
-                        <li class="col-md-4 col-sm-6 col-xs-12">
-                            <figure>
-                                <img class="center-block img-responsive" src="img/mockup_ndb.png">
-                                <figcaption>
-                                    <a href="http://ndbahia.com.br/">Núcleo de decoração da Bahia</a>
-                                </figcaption>
-                            </figure>
+                        <li class="animated fadeInLeft col-md-4 col-sm-6 col-12 wordpress">
+                            <p>Wordpress</p>
+                            <div class="barra-de-progresso">
+                                <div class="progresso"></div>
+                            </div>
                         </li>
-                        <li class="col-md-4 col-sm-6 col-xs-12">
-                            <figure>
-                                <img class="center-block img-responsive" src="img/mockup_planeta.png">
-                                <figcaption>
-                                    <a href="http://planetaolodum.com/">Planeta Olodum</a>
-                                </figcaption>
-                            </figure>
+                        <li class="animated fadeInLeft col-md-4 col-sm-6 col-12 codeigniter">
+                            <p>CodeIgniter</p>
+                            <div class="barra-de-progresso">
+                                <div class="progresso"></div>
+                            </div>
                         </li>
-                        <li class="col-md-4 col-sm-6 col-xs-12">
-                            <figure>
-                                <img class="center-block img-responsive" src="img/mockup_senac.png">
-                                <figcaption>
-                                    <a href="http://cursos.ba.senac.br/">Senac Cursos</a>
-                                </figcaption>
-                            </figure>
+                        <li class="animated fadeInLeft col-md-4 col-sm-6 col-12 laravel">
+                            <p>Larevel</p>
+                            <div class="barra-de-progresso">
+                                <div class="progresso"></div>
+                            </div>
                         </li>
-                        <li class="col-md-4 col-sm-6 col-xs-12">
-                            <figure>
-                                <img class="center-block img-responsive" src="img/mockup_via.png">
-                                <figcaption>
-                                    <a href="http://viaprojetos.com.br/">Via Projetos</a>
-                                </figcaption>
-                            </figure>
+                        <li class="animated fadeInLeft col-md-4 col-sm-6 col-12 javascript">
+                            <p>JavaScript</p>
+                            <div class="barra-de-progresso">
+                                <div class="progresso"></div>
+                            </div>
+                        </li>
+                        <li class="animated fadeInLeft col-md-4 col-sm-6 col-12 vue">
+                            <p>VueJs</p>
+                            <div class="barra-de-progresso">
+                                <div class="progresso"></div>
+                            </div>
+                        </li>
+                        <li class="animated fadeInLeft col-md-4 col-sm-6 col-12 jquery">
+                            <p>Jquery</p>
+                            <div class="barra-de-progresso">
+                                <div class="progresso"></div>
+                            </div>
+                        </li>
+                        <li class="animated fadeInLeft col-md-4 col-sm-6 col-12 html">
+                            <p>HTML/CSS</p>
+                            <div class="barra-de-progresso">
+                                <div class="progresso"></div>
+                            </div>
+                        </li>
+                        <li class="animated fadeInLeft col-md-4 col-sm-6 col-12 sass">
+                            <p>Sass</p>
+                            <div class="barra-de-progresso">
+                                <div class="progresso"></div>
+                            </div>
+                        </li>
+                        <li class="animated fadeInLeft col-md-4 col-sm-6 col-12 bootstrap">
+                            <p>Bootstrap</p>
+                            <div class="barra-de-progresso">
+                                <div class="progresso"></div>
+                            </div>
                         </li>
                     </ul>
-                </div> <!-- /container -->
+                </section>
             </section>
         </section>
-    </section>
+    </template>
+
+    <!-- Experiencias Profissionais -->
+    <template id="exp">
+        <section class="exp-container fade show">
+            <h2 class="hide-title">Experiências Profissionais</h2>
+            <div id="exp">
+                <div class="header-center col-lg-12">
+                    <figure class="animated fadeInDown">
+                        <img src="img/fabio.jpg" class="img-circle">
+                        <figcaption>
+                                <small><span class="glyphicon glyphicon-map-marker">&nbsp;</span>Salvador, Bahia</small>
+                        </figcaption>
+                    </figure>
+                    <blockquote class="animated fadeIn col-md-4 col-sm-12 col-12">
+                        “Desenvolvedor Web a 4 anos com conhecimento em ferramentas voltadas para computação gráfica, sempre disposto a obter
+                        novos conhecimentos e disposição para encarar novos desafios”
+                    </blockquote>
+                    <h3 class="animated fadeInUp format-h3">Ultimas Experiências Profissionais</h3>
+                    <ul class="animated fadeInUp list-unstyled d-flex">
+                        <li class="col-md-4 col-sm-12 col-12">
+                            <p class="job">
+                                Suporte Técnico (TI) – (Março de 2012 até Junho de 2014)
+                                <strong>SAGA – Escola de arte, games e animação.</strong>
+                                Gerenciamento de maquinas, rede e softwares.
+                                Logística de peças de equipamentos para reposição.
+                            </p>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-12">
+                            <p class="job">
+                                Desenvolvedor Full-Stack – (Março de 2016 até Fevereiro de 2018)
+                                <strong>Ouzar - Comunicação e marketing</strong>
+                                Desenvolvimento de sites e aplicações web.
+                            </p>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-12">
+                            <p class="job">
+                                Desenvolvedor Front-end – (Março de 2018 até o momento)
+                                <strong>Tao Interativa</strong>
+                                Desenvolvimento de sites e aplicações web.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </template>
+    
+    <!-- Trabalhos Realizados -->
+    <template id="jobs">
+        <section class="trabalhos-container fade show">
+            <h2 class="hide-title">Trabalhos Realizados</h2>
+            <div class="container animated fadeIn">
+                <ul class="list-unstyled row header-center">
+                    <li class="col-md-4 col-sm-6 col-12">
+                        <figure>
+                            <img class="center-block img-responsive" src="img/mockup_lkx.png">
+                            <figcaption>
+                                <a href="http://lkxcapital.com.br/">LKX Capital</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="col-md-4 col-sm-6 col-12">
+                        <figure>
+                            <img class="center-block img-responsive" src="img/mockup_ndb.png">
+                            <figcaption>
+                                <a href="https://ndbahia.com.br/">Núcleo de decoração da Bahia</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="col-md-4 col-sm-6 col-12">
+                        <figure>
+                            <img class="center-block img-responsive" src="img/mockup_senac.png">
+                            <figcaption>
+                                <a href="http://cursos.ba.senac.br/">Senac Cursos</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="col-md-4 col-sm-6 col-12">
+                        <figure>
+                            <img class="center-block img-responsive" src="img/mockup_via.png">
+                            <figcaption>
+                                <a href="http://viaprojetos.com.br/">Via Projetos</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="col-md-4 col-sm-6 col-12">
+                        <figure>
+                            <img class="center-block img-responsive" src="img/mockup_ouvidoria.png">
+                            <figcaption>
+                                <a href="http://www.defensoria.ba.def.br/ouvidoria/">Ouvidoria da Defensoria Pública da Bahia</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="col-md-4 col-sm-6 col-12">
+                        <figure>
+                            <img class="center-block img-responsive" src="img/mockup_agil.png">
+                            <figcaption>
+                                <a href="https://agildh.com.br/">Ágil - Desenvolvimento Humano</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="col-md-4 col-sm-6 col-12">
+                        <figure>
+                            <img class="center-block img-responsive" src="img/mockup_portalmed.png">
+                            <figcaption>
+                                <a href="http://hospitalalianca.com.br/portal_medico/">Portal Medico - Hospital Aliança</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="col-md-4 col-sm-6 col-12">
+                        <figure>
+                            <img class="center-block img-responsive" src="img/mockup_aliancapart.png">
+                            <figcaption>
+                                <a href="http://www.aliancaparticipacoes.com.br/">Aliança Participações</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <!-- <li class="col-md-4 col-sm-6 col-12">
+                        <figure>
+                            <img class="center-block img-responsive" src="img/mockup_seguradora.png">
+                            <figcaption>
+                                <a href="http://www.alba.com.br/">Seguradora Aliança</a>
+                            </figcaption>
+                        </figure>
+                    </li> -->
+                </ul>
+            </div> <!-- /container -->
+        </section>
+    </template>
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.1/axios.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@3.1.3/dist/vue-router.js"></script>
     <script src="js/app.js"></script>
 </body>
 
