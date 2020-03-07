@@ -32,3 +32,7 @@ HTML5, CSS3, Sass.
 > * [Via Projetos](http://viaprojetos.com.br/)
 > * [Tempo Propaganda](http://tempopropaganda.com.br/)
 > * [Juliana Patury Arquitetura](http://julianapaturyarquitetura.com.br/)
+> * [Ouvidoria da Defensoria Pública da Bahia](http://www.defensoria.ba.def.br/ouvidoria/)
+> * [Portal Medico - Hospital Aliança](https://hospitalalianca.com.br/portal_medico/)
+> * [Aliança Participações](http://www.aliancaparticipacoes.com.br/)
+> * [Seguradora Aliança](http://www.alba.com.br/)
